@@ -33,3 +33,12 @@ single_file_path = os.path.join(excerpts_file_path, "your_file.csv")
 3. Customize your prompt by editing the build_prompt(question, answer) function.
 4. Run the script:
 <pre> python sentiment_analysis_ollama.py </pre>
+
+## What It Does
+- Starts or restarts an Ollama server
+- Iterates through each question-answer pair
+- Constructs an LLM prompt using `build_prompt()`
+- Parses the LLM output, including structured JSON and optional `<think>` sections
+- Normalizes and cleans the JSON response
+- Appends sentiment to an output pandas dataframe
+- Saves the enriched dataset to the `sentiments/` folder
