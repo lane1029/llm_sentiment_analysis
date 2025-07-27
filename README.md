@@ -4,9 +4,13 @@ This Python script performs sentiment analysis on qualitative interview data usi
 ## Project Structure
 `.
 ├── sentiment_analysis_ollama.py     # Main script
+
 ├── excerpts_folder/                 # Folder with input CSV files
+
 │   └── your_file.csv                # CSV with question, answer, and id columns
+
 ├── sentiments/                      # Output folder for annotated CSV files
+
 ├── ollama.log                       # Log file for Ollama server output
 `
 
